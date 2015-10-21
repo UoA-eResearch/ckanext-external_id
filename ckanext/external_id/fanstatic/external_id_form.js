@@ -11,7 +11,8 @@ ckan.module('external_id_form', function ($, _) {
          and display the current value. Otherwise, default to the first
          available external ID provider, and hide the custom input
       */
-      if ($('input#field-relation').val() == '') {
+      if ($('input#field-relation').val() == '' &&
+          $('select#field-relation').val() != 'manual') {
         group.hide();
       } else {
         $('select#field-relation').val('manual');
