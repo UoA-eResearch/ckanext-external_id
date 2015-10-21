@@ -1,33 +1,3 @@
-.. You should enable this project on travis-ci.org and coveralls.io to make
-   these badges work. The necessary Travis and Coverage config files have been
-   generated for you.
-
-.. image:: https://travis-ci.org/neon-ninja/ckanext-external_id.svg?branch=master
-    :target: https://travis-ci.org/neon-ninja/ckanext-external_id
-
-.. image:: https://coveralls.io/repos/neon-ninja/ckanext-external_id/badge.svg
-  :target: https://coveralls.io/r/neon-ninja/ckanext-external_id
-
-.. image:: https://pypip.in/download/ckanext-external_id/badge.svg
-    :target: https://pypi.python.org/pypi//ckanext-external_id/
-    :alt: Downloads
-
-.. image:: https://pypip.in/version/ckanext-external_id/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-external_id/
-    :alt: Latest Version
-
-.. image:: https://pypip.in/py_versions/ckanext-external_id/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-external_id/
-    :alt: Supported Python versions
-
-.. image:: https://pypip.in/status/ckanext-external_id/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-external_id/
-    :alt: Development Status
-
-.. image:: https://pypip.in/license/ckanext-external_id/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-external_id/
-    :alt: License
-
 =============
 ckanext-external_id
 =============
