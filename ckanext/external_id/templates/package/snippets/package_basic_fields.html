@@ -1,0 +1,19 @@
+{% ckan_extends %}
+
+{% block package_basic_fields_custom %}
+  {{ form.select('relation',
+                  label=_('External ID'),
+                  options=h.external_id_plugin_get_id_providers(),
+                  id='field-relation',
+                  selected=data.relation,
+                  classes=['control-medium'],
+                  error=errors.relation) }}
+  {{ form.input('relation',
+                 label=_('External ID'),
+                 id='field-relation',
+                 value=data.relation,
+                 classes=['control-medium'],
+                 error=errors.relation,
+                 attrs = {'data-module': 'external_id_form'}) }}
+  {% resource 'external_id/external_id_form.js' %}
+{% endblock %}

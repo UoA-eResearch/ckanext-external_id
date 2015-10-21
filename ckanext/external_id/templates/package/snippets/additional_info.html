@@ -1,0 +1,19 @@
+{% ckan_extends %}
+
+{% block extras %}
+  {% if pkg_dict.relation %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("External ID") }}</th>
+      <td class="dataset-details">{{ pkg_dict.relation }}</td>
+    </tr>
+  {% elif pkg_dict.extras %}
+    {% for obj in pkg_dict.extras %}
+      {% if obj.key == "relation" %}
+        <tr>
+          <th scope="row" class="dataset-label">{{ _("External ID") }}</th>
+          <td class="dataset-details">{{ obj.value }}</td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endblock %}
