@@ -1,8 +1,10 @@
 .. image:: https://travis-ci.org/UoA-eResearch/ckanext-external_id.svg?branch=master
   :target: https://travis-ci.org/UoA-eResearch/ckanext-external_id
 
-.. image:: https://coveralls.io/repos/UoA-eResearch/ckanext-external_id/badge.svg
-  :target: https://coveralls.io/r/UoA-eResearch/ckanext-external_id
+.. image:: https://coveralls.io/repos/UoA-eResearch/ckanext-external_id/badge.svg?branch=master&service=github
+  :target: https://coveralls.io/github/UoA-eResearch/ckanext-external_id?branch=master
+
+
 
 =============
 ckanext-external_id
