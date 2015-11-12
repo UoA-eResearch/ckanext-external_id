@@ -1,3 +1,9 @@
+.. image:: https://travis-ci.org/neon-ninja/ckanext-external_id.svg?branch=master
+  :target: https://travis-ci.org/neon-ninja/ckanext-external_id
+
+.. image:: https://coveralls.io/repos/neon-ninja/ckanext-external_id/badge.svg
+  :target: https://coveralls.io/r/neon-ninja/ckanext-external_id
+
 =============
 ckanext-external_id
 =============
