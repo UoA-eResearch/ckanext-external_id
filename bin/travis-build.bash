@@ -19,6 +19,9 @@ echo "Creating the PostgreSQL user and database..."
 sudo -u postgres psql -c "CREATE USER ckan_default WITH PASSWORD 'pass';"
 sudo -u postgres psql -c 'CREATE DATABASE ckan_test WITH OWNER ckan_default;'
 
+sudo -u postgres createuser -S -D -R -P -l datastore_default
+sudo -u postgres createdb -O ckan_default datastore_default -E utf-8
+
 echo "Installing ckanext-ckanext-external_id and its requirements..."
 python setup.py develop
 pip install -r dev-requirements.txt
