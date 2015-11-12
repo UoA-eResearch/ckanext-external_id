@@ -12,18 +12,19 @@ ckan.module('external_id_form', function ($, _) {
          available external ID provider, and hide the custom input
       */
       if ($('input#field-relation').val() == '' &&
-          $('select#field-relation').val() != 'manual') {
+          $('select#field-relation-select').val() != 'manual') {
         group.hide();
       } else {
-        $('select#field-relation').val('manual');
+        $('select#field-relation-select').val('manual');
       }
-      $('select#field-relation').change(function(event) {
+      $('select#field-relation-select').change(function(event) {
         var new_val = $(this).val();
         if (new_val === 'manual') {
           // If the user selects manual entry - display an input to receive it
           group.show();
         } else {
           group.hide();
+          $('input#field-relation').val(new_val);
         }
       });
     }

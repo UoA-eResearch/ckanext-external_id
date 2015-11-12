@@ -16,14 +16,12 @@ class External_IdPlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
     plugins.implements(plugins.ITemplateHelpers)
 
     def process_external_id(self, value, context):
-        if value[0] == 'manual':
-            log.info("External ID manually entered, set to %s" % value[1])
-            return value[1]
-        else:
-            log.info("Call %s external ID provider" % value[0])
-            for provider in id_providers:
-                if provider.name == value[0]:
-                    return provider.get_external_id(context)
+        for provider in id_providers:
+            if provider.name == value:
+                log.info("Call %s external ID provider" % value)
+                return provider.get_external_id(context)
+        log.info("External ID manually entered, set to %s" % value)
+        return value
 
     def get_id_providers(self):
         # Used to populate the select list

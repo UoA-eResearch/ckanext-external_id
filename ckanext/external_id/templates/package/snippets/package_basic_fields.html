@@ -1,10 +1,10 @@
 {% ckan_extends %}
 
 {% block package_basic_fields_custom %}
-  {{ form.select('relation',
+  {{ form.select('relation-select',
                   label=_('External ID'),
                   options=h.external_id_plugin_get_id_providers(),
-                  id='field-relation',
+                  id='field-relation-select',
                   selected=data.relation,
                   classes=['control-medium'],
                   error=errors.relation) }}
